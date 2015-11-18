@@ -10,4 +10,6 @@ sudo pip install flake8
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 sudo apt-get install --yes nodejs
 sudo ln -s /usr/bin/nodejs /usr/bin/node
+sudo npm install jcsc -g
+sudo npm install jshint -g
 wget https://www.rescuetime.com/installers/rescuetime_beta_amd64.deb
