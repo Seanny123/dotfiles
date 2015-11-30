@@ -1,0 +1,30 @@
+[user]
+	name = Sean Aubin
+	email = saubin@uwaterloo.ca
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	pager = true
+	status = auto
+	ui = auto
+[color "branch"]
+	current = green bold
+	local = green
+	remote = red bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red
+[core]
+	autocrlf = input
+	editor = nano
+	whitespace = cr-at-eol
+[branch]
+	autosetuprebase = always
