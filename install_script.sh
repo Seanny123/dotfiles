@@ -10,7 +10,9 @@ sudo apt update
 sudo apt install --yes fluxgui trash-cli xclip git sublime-text
 
 # Python specific
-sudo apt install python-dev python-setuptools python-tk
+sudo apt install python-dev python-setuptools python-tk python-pip
+sudo apt install python3-dev python3-setuptools python3-tk python3-pip
+# Currently using Python 2 for no particular reason
 sudo pip -H install pip --upgrade
 sudo pip -H install ipython ipdb flake8 seaborn pandas tables
 sudo pip install jupyter --upgrade
