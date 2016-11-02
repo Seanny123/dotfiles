@@ -10,7 +10,7 @@ sudo apt update
 sudo apt install --yes fluxgui trash-cli xclip git sublime-text
 
 # Python specific
-sudo apt install python-dev python-setuptools
+sudo apt install python-dev python-setuptools python-tk
 sudo pip -H install pip --upgrade
 sudo pip -H install ipython ipdb flake8 seaborn pandas tables
 sudo pip install jupyter --upgrade
