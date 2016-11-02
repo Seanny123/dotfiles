@@ -16,8 +16,6 @@ alias la='ls -A'
 alias l='ls -CF'
 alias ".."="cd .."
 alias lh='ls -sh'
-alias pynum='ipython -c "import numpy as np"'
-alias numpy='ipython -c "import numpy as np"'
 alias del='trash-put'
 
 gcv()
