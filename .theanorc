@@ -1,0 +1,8 @@
+[global]
+floatX = float32
+device = gpu
+# For better performance, but higher GPU memory usage
+#allow_gc = False
+
+[nvcc]
+flags=-D_FORCE_INLINES
