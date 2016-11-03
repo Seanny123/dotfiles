@@ -1,6 +1,8 @@
 alias ".."="cd .."
 alias lh='ls -sh'
+alias 'py'='ipython'
 alias del='trash-put'
+alias jn="jupyter-notebook"
 
 gcv()
 {
