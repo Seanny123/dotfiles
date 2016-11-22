@@ -7,12 +7,14 @@ wget https://www.rescuetime.com/installers/rescuetime_beta_amd64.deb
 sudo dpkg -i rescuetime_beta_amd64.deb
 sudo add-apt-repository ppa:nathan-renniewaldock/flux
 sudo apt update
-sudo apt install --yes fluxgui trash-cli xclip git sublime-text
+sudo apt install --yes fluxgui trash-cli xclip git sublime-text filezilla gedit
 
 # Python specific
 sudo apt install python-dev python-setuptools python-tk python-pip
 sudo apt install python3-dev python3-setuptools python3-tk python3-pip
-# Currently using Python 2 for no particular reason
 sudo pip -H install pip --upgrade
 sudo pip -H install ipython ipdb flake8 seaborn pandas tables
 sudo pip install jupyter --upgrade
+
+# VPN requirements
+sudo apt --yes install network-manager-openconnect lib32z1 lib32ncurses5
