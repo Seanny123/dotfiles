@@ -13,7 +13,7 @@ sudo apt install --yes fluxgui trash-cli xclip git sublime-text filezilla gedit 
 sudo apt install python-dev python-setuptools python-tk python-pip
 sudo apt install python3-dev python3-setuptools python3-tk python3-pip
 sudo -H pip install pip --upgrade
-sudo -H pip install ipython ipdb flake8 seaborn pandas tables
+sudo -H pip install ipython ipdb flake8 seaborn pandas tables pytest
 sudo -H pip install jupyter --upgrade
 
 # VPN requirements
