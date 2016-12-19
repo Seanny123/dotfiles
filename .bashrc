@@ -3,6 +3,7 @@ alias lh='ls -sh'
 alias 'py'='ipython'
 alias del='trash-put'
 alias jn="jupyter-notebook"
+alias gputop="watch -n 0.5 nvidia-smi"
 
 gcv()
 {
