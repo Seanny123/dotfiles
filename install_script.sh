@@ -7,7 +7,7 @@ wget https://www.rescuetime.com/installers/rescuetime_beta_amd64.deb
 sudo dpkg -i rescuetime_beta_amd64.deb
 sudo add-apt-repository ppa:nathan-renniewaldock/flux
 sudo apt update
-sudo apt install --yes fluxgui trash-cli xclip git sublime-text filezilla gedit unrar vlc
+sudo apt install --yes fluxgui trash-cli xclip git sublime-text filezilla gedit unrar vlc pdfgrep
 
 # Python specific
 sudo apt install python-dev python-setuptools python-tk python-pip
