@@ -23,3 +23,5 @@ sudo -H pip install jupyter --upgrade
 sudo apt --yes install network-manager-openconnect lib32z1 lib32ncurses5
 
 # TODO: decide if I want to set up npm, typescript and Visual Studio Code on every machine I use
+
+# TODO: remove the messaging and email stuff that I don't use that usually exists on a default Ubuntu install
