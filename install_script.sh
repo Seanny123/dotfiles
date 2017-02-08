@@ -8,7 +8,7 @@ sudo dpkg -i rescuetime_beta_amd64.deb
 sudo add-apt-repository ppa:nathan-renniewaldock/flux
 sudo apt update
 sudo apt install --yes fluxgui trash-cli xclip git sublime-text filezilla gedit unrar vlc pdfgrep htop skype-bin
-sudo apt install --yes shutter
+sudo apt install --yes shutter dropbox
 
 # TODO: figure out how to automatically install newest version of Wine and FoxitReader Portable
 
