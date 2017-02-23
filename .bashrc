@@ -13,5 +13,5 @@ gcv()
 # helper functions
 spip()
 {
-    sudo -H pip $*
+    sudo -H pip3 $*
 }
