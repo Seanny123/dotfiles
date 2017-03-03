@@ -17,3 +17,8 @@ spip()
 {
     sudo -H pip3 $*
 }
+
+dpy()
+{
+    ipython3 --pdb $*
+}
