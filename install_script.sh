@@ -15,9 +15,9 @@ sudo apt install --yes shutter dropbox
 # Python specific
 sudo apt install python-dev python-setuptools python-tk python-pip
 sudo apt install python3-dev python3-setuptools python3-tk python3-pip
-sudo -H pip install pip --upgrade
-sudo -H pip install ipython ipdb flake8 seaborn pandas tables pytest scipy scikit-learn
-sudo -H pip install jupyter --upgrade
+sudo -H pip3 install pip3 --upgrade
+sudo -H pip3 install ipython ipdb flake8 seaborn pandas tables pytest scipy scikit-learn
+sudo -H pip3 install jupyter --upgrade
 
 # Waterloo VPN requirements
 sudo apt --yes install network-manager-openconnect lib32z1 lib32ncurses5
