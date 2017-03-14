@@ -5,18 +5,19 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 wget https://www.rescuetime.com/installers/rescuetime_beta_amd64.deb
 sudo dpkg -i rescuetime_beta_amd64.deb
-sudo add-apt-repository ppa:nathan-renniewaldock/flux
+sudo add-apt-repository --yes ppa:nathan-renniewaldock/flux
+sudo add-apt-repository --yes ppa:webupd8team/sublime-text-3
 sudo apt update
-sudo apt install --yes fluxgui trash-cli xclip git sublime-text filezilla gedit unrar vlc pdfgrep htop skype-bin
-sudo apt install --yes shutter dropbox
+sudo apt install --yes fluxgui trash-cli xclip git pulseaudio filezilla gedit unrar vlc pdfgrep htop shutter keepass2
+sudo apt install --yes nautilus-dropbox
+sudo apt install --yes skype sublime-text-installer
 
 # TODO: figure out how to automatically install newest version of Wine and FoxitReader Portable
-# TODO: figure out how to install dropbox
 
 # Python specific
 sudo apt install --yes python-dev python-setuptools python-tk python-pip
 sudo apt install --yes python3-dev python3-setuptools python3-tk python3-pip
-sudo -H pip3 install pip3 --upgrade
+sudo -H pip3 install pip --upgrade
 sudo -H pip3 install ipython ipdb flake8 seaborn pandas tables pytest scipy scikit-learn
 sudo -H pip3 install jupyter --upgrade
 
