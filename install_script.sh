@@ -21,9 +21,9 @@ sudo -H pip3 install ipython ipdb flake8 seaborn pandas tables pytest scipy scik
 sudo -H pip3 install jupyter --upgrade
 
 # Waterloo VPN requirements
-sudo apt --yes install network-manager-openconnect lib32z1 lib32ncurses5
+sudo apt install --yes network-manager-openconnect lib32z1 lib32ncurses5
 
 # TODO: decide if I want to set up npm, typescript and Visual Studio Code on every machine I use
 
 # Remove the games, messaging and email stuff that I don't use that usually exists on a default Ubuntu install
-sudo apt remove thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-mines
+sudo apt remove --yes thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-mines
