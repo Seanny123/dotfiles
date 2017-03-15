@@ -1,6 +1,3 @@
-# Install Anki
-wget https://apps.ankiweb.net/downloads/current/anki_2.0.41_all.deb
-sudo dpkg -i anki_2.0.41_all.deb
-sudo apt -f install
+# TODO: install Anki
 
-sudo apt install --yes inkscape bleachbit gummi gparted audacity kdenlive
+sudo apt install --yes inkscape bleachbit gummi gparted audacity kdenlive boinc-manager
