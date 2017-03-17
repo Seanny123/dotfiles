@@ -1,5 +1,6 @@
 cd /tmp
 
+sudo dpkg --add-architecture i386 
 dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
 
 # system utilites
@@ -7,6 +8,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 wget https://www.rescuetime.com/installers/rescuetime_beta_amd64.deb
 sudo dpkg -i rescuetime_beta_amd64.deb
+sudo add-apt-repository --yes ppa:wine/wine-builds
 sudo add-apt-repository --yes ppa:nathan-renniewaldock/flux
 sudo add-apt-repository --yes ppa:webupd8team/sublime-text-3
 sudo add-apt-repository --yes "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner"
@@ -14,6 +16,7 @@ sudo apt update
 sudo apt install --yes fluxgui trash-cli xclip git filezilla gedit unrar vlc pdfgrep htop shutter keepass2
 sudo apt install --yes nautilus-dropbox
 sudo apt install --yes skype sublime-text-installer
+sudo apt install --install-recommends winehq-staging
 
 # TODO: figure out how to automatically install newest version of Wine and FoxitReader Portable
 
