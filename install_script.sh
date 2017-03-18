@@ -18,7 +18,7 @@ sudo apt install --yes nautilus-dropbox
 sudo apt install --yes skype sublime-text-installer
 sudo apt install --install-recommends winehq-staging
 
-# TODO: figure out how to automatically install newest version of Wine and FoxitReader Portable
+wget https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=English
 
 # Python specific
 sudo apt install --yes python-dev python-setuptools python-tk python-pip
@@ -34,3 +34,11 @@ sudo bash vpnsetup.sh
 
 # Remove the games, messaging and email stuff that I don't use that usually exists on a default Ubuntu install
 sudo apt remove --yes thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-mines
+
+# Configure wine
+wine notepad
+wine Foxit*
+
+# update and upgrade, now that we have all these new packages
+sudo apt update
+sudo apt upgrade
