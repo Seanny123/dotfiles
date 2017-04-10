@@ -24,7 +24,7 @@ wget https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&pla
 sudo apt install --yes python-dev python-setuptools python-tk python-pip
 sudo apt install --yes python3-dev python3-setuptools python3-tk python3-pip
 sudo -H pip3 install pip --upgrade
-sudo -H pip3 install ipython ipdb flake8 seaborn pandas tables pytest scipy scikit-learn
+sudo -H pip3 install ipython ipdb flake8 seaborn pandas tables pytest scipy scikit-learn pylint notebook
 sudo -H pip3 install jupyter --upgrade
 
 # Waterloo VPN requirements
