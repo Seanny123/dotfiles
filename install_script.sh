@@ -27,6 +27,9 @@ sudo -H pip3 install pip --upgrade
 sudo -H pip3 install ipython ipdb flake8 seaborn pandas tables pytest scipy scikit-learn pylint notebook
 sudo -H pip3 install jupyter --upgrade
 
+mkdir ~/.jupyter/custom
+wget https://raw.githubusercontent.com/powerpak/jupyter-dark-theme/master/custom.css ~/.jupyter/custom
+
 # Waterloo VPN requirements
 sudo apt install --yes network-manager-openconnect lib32z1 lib32ncurses5
 wget https://cn-vpn.uwaterloo.ca/CACHE/stc/3/binaries/vpnsetup.sh
