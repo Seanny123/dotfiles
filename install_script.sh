@@ -3,6 +3,9 @@ cd /tmp
 sudo dpkg --add-architecture i386 
 dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
 
+# Debian systems don't have `add-apt-repository` by default
+sudo apt install software-properties-common python-software-properties
+
 # system utilites
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
