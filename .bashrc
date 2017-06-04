@@ -6,6 +6,7 @@ alias del='trash-put'
 # python
 alias 'spy'='sudo python3'
 alias 'py'='ipython3'
+alias 'ipython'='ipython3'
 alias 'python'='python3'
 alias spipup="spip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo -H pip install --upgrade"
 alias jn="jupyter-notebook"
