@@ -37,3 +37,4 @@
 	sh = show --stat
 	showtrackedignored = ls-files -i --exclude-standard
 	st = status -sb
+	nb = checkout --track -b $1 origin/$1
