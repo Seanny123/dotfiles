@@ -29,3 +29,8 @@ dpy()
 {
     ipython3 --pdb $*
 }
+
+ipy()
+{
+    ipython3 -i $*
+}
