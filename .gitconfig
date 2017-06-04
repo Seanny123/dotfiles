@@ -28,3 +28,12 @@
 	whitespace = cr-at-eol
 [branch]
 	autosetuprebase = always
+[alias]
+	wdiff = diff --color-words
+	co = checkout
+	ds = diff --staged
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	ls = ls-files
+	sh = show --stat
+	showtrackedignored = ls-files -i --exclude-standard
+	st = status -sb
