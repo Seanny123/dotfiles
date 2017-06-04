@@ -28,6 +28,8 @@
 	whitespace = cr-at-eol
 [branch]
 	autosetuprebase = always
+[diff "jupyternotebook"]
+	command = git-nbdiffdriver diff
 [alias]
 	wdiff = diff --color-words
 	co = checkout
