@@ -20,7 +20,7 @@ sudo apt install --yes nautilus-dropbox
 sudo apt install --yes skype sublime-text-installer
 sudo apt install --install-recommends winehq-staging
 
-wget https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=English
+wget https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=English -O Foxit.exe
 
 # Python specific
 sudo apt install --yes python-dev python-setuptools python-tk python-pip
@@ -47,7 +47,7 @@ sudo apt remove --yes thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-
 
 # Configure wine
 wine notepad
-wine Foxit*
+wine Foxit.exe
 
 # update and upgrade, now that we have all these new packages
 sudo apt update
