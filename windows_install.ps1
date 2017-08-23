@@ -9,5 +9,14 @@ choco install --yes googlechrome firefox git notepadplusplus filezilla vlc subli
 choco install -yes visualstudiocode nodejs yarn
 npm install -g tslint typescript
 
-# installing Python depends on how hardcore I want to be and thus is not included in this script until Numpy/Scipy
-# can be installed with OpenBLAS or MKL optimizations without having to use Conda
+# Python (no MKL optimizations)
+# TODO: also add to path?
+choco install --yes anaconda3
+
+# Gaming
+choco install --yes steam
+
+# Android
+choco install --yes androidstudio
+
+# TODO: setup blue light filtering
