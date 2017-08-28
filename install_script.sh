@@ -15,7 +15,7 @@ sudo add-apt-repository --yes ppa:wine/wine-builds
 sudo add-apt-repository --yes ppa:webupd8team/sublime-text-3
 sudo add-apt-repository --yes "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner"
 sudo apt update
-sudo apt install --yes trash-cli xclip git filezilla gedit unrar vlc pdfgrep htop shutter keepass2
+sudo apt install --yes trash-cli xclip git filezilla gedit unrar vlc pdfgrep htop shutter keepass2 curl
 sudo apt install --yes nautilus-dropbox
 sudo apt install --yes skype sublime-text-installer
 sudo apt install --install-recommends winehq-staging
@@ -48,6 +48,14 @@ sudo apt remove --yes thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-
 # Configure wine
 wine notepad
 wine Foxit.exe
+
+# Configure NodeJS
+# Note: 9.x might be available in the future
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install -g typescript tslint
+wget https://go.microsoft.com/fwlink/?LinkID=760868
+sudo dpkg -i vscode-amd64.deb
 
 # update and upgrade, now that we have all these new packages
 sudo apt update
