@@ -30,7 +30,7 @@ sudo -H pip3 install ipython ipdb flake8 seaborn pandas tables pytest scipy scik
 sudo -H pip3 install jupyter --upgrade
 
 mkdir ~/.jupyter/custom
-wget https://raw.githubusercontent.com/Seanny123/jupyter-dark-theme/master/custom.css ~/.jupyter/custom
+wget https://raw.githubusercontent.com/Seanny123/jupyter-dark-theme/master/custom.css -P ~/.jupyter/custom
 
 # Git specific
 git config --global user.name "Sean Aubin"
