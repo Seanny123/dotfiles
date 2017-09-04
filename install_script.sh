@@ -57,6 +57,9 @@ sudo npm install -g typescript tslint
 wget https://go.microsoft.com/fwlink/?LinkID=760868
 sudo dpkg -i vscode-amd64.deb
 
+# gnome tweaks
+gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
+
 # update and upgrade, now that we have all these new packages
 sudo apt update
 sudo apt upgrade
