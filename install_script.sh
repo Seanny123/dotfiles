@@ -60,6 +60,7 @@ sudo dpkg -i vscode-amd64.deb
 # gnome tweaks
 gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
 gsettings set org.gnome.desktop.wm.preferences focus-mode sloppy
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
 
 # update and upgrade, now that we have all these new packages
 sudo apt update
