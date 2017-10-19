@@ -31,6 +31,7 @@ sudo -H pip3 install jupyter --upgrade
 
 mkdir ~/.jupyter/custom
 wget https://raw.githubusercontent.com/Seanny123/jupyter-dark-theme/master/custom.css -P ~/.jupyter/custom
+wget https://raw.githubusercontent.com/Seanny123/Linux-Settings/custom.js -P ~/.jupyter/custom
 
 # Git specific
 git config --global user.name "Sean Aubin"
