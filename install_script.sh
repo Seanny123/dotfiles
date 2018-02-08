@@ -6,27 +6,40 @@ dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
 # Debian systems don't have `add-apt-repository` by default
 sudo apt install software-properties-common python-software-properties
 
-# system utilites
+## System utilites
+# Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
-sudo add-apt-repository --yes ppa:wine/wine-builds
+# Wine setup
+wget -nc https://dl.winehq.org/wine-builds/Release.key
+sudo apt-key add Release.key
+sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
+# Sublime setup
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+# Visual Studio Code setup
+sudo add-apt-repository -y "deb https://packages.microsoft.com/repos/vscode stable main"
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EB3E94ADBE1229CF
+# Pycharm
+sudo snap install pycharm-professional --classic
+
+# Partner repos
 sudo add-apt-repository --yes "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner"
 sudo apt update
 
-sudo apt install --yes trash-cli xclip git filezilla gedit unrar vlc pdfgrep htop shutter keepass2 curl
-sudo apt install --yes nautilus-dropbox
-sudo apt install --yes skype sublime-text
 sudo apt install --install-recommends winehq-staging
+sudo apt -y trash-cli xclip git filezilla gedit unrar vlc pdfgrep htop shutter keepass2 curl wine
+sudo apt -y nautilus-dropbox
+sudo apt -y skype sublime-text code
+
 
 wget https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=English -O Foxit.exe
 
 # Python specific
-sudo apt install --yes python-dev python-setuptools python-tk python-pip
-sudo apt install --yes python3-dev python3-setuptools python3-tk python3-pip
+sudo apt -y python-dev python-setuptools python-tk python-pip
+sudo apt -y python3-dev python3-setuptools python3-tk python3-pip
 sudo -H pip3 install pip --upgrade
-sudo -H pip3 install ipython ipdb flake8 seaborn pandas tables pytest scipy scikit-learn pylint notebook h5py hyperopt nbdime
+sudo -H pip3 install ipython ipdb flake8 seaborn pandas tables pytest scipy scikit-learn pylint notebook h5py hyperopt nbdime pyqt5
 sudo -H pip3 install jupyter --upgrade
 
 mkdir ~/.jupyter/custom
@@ -44,7 +57,7 @@ wget https://cn-vpn.uwaterloo.ca/CACHE/stc/3/binaries/vpnsetup.sh
 sudo bash vpnsetup.sh
 
 # Remove the games, messaging and email stuff that I don't use that usually exists on a default Ubuntu install
-sudo apt remove --yes thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-mines gnome-mines
+sudo apt remove --yes thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-mines
 
 # Configure wine
 wine notepad
@@ -58,12 +71,12 @@ sudo npm install -g typescript tslint
 wget https://go.microsoft.com/fwlink/?LinkID=760868
 sudo dpkg -i vscode-amd64.deb
 
-# gnome tweaks
+# Gnome tweaks
 gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
 gsettings set org.gnome.desktop.wm.preferences focus-mode sloppy
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
 
-# update and upgrade, now that we have all these new packages
+# Update and upgrade, now that we have all these new packages
 sudo apt update
 sudo apt upgrade
