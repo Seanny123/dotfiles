@@ -57,7 +57,7 @@ wget https://cn-vpn.uwaterloo.ca/CACHE/stc/3/binaries/vpnsetup.sh
 sudo bash vpnsetup.sh
 
 # Remove the games, messaging and email stuff that I don't use that usually exists on a default Ubuntu install
-sudo apt remove --yes thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-mines
+sudo apt remove --yes thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-mines gnome-sudoku gnome-books gnome-maps gnome-contacts 
 
 # Configure wine
 wine notepad
