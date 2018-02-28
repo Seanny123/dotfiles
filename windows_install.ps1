@@ -11,7 +11,8 @@ npm install -g tslint typescript
 
 # Python (no MKL optimizations)
 # TODO: also add to path?
-choco install --yes anaconda3
+choco install anaconda3 --params="/AddToPath:1" --yes
+choco install pycharm
 
 # Gaming
 choco install --yes steam
