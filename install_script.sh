@@ -65,11 +65,16 @@ wine Foxit.exe
 
 # Configure NodeJS
 # Note: 9.x might be available in the future
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install -g typescript tslint
-wget https://go.microsoft.com/fwlink/?LinkID=760868
-sudo dpkg -i vscode-amd64.deb
+
+# VS Code
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo apt update
+sudo apt install code
 
 # Gnome tweaks
 gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
