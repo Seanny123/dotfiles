@@ -12,12 +12,13 @@ args = parser.parse_args()
 
 # defining keys & strings to be used
 key = "org.gnome.settings-daemon.plugins.media-keys custom-keybindings"
-subkey1 = f"{key.replace(" ", ".")[:-1]}:"
-item_s = f"/{key.replace(" ", "/").replace(".", "/")}/"
+subkey1 = f"{key.replace(' ', '.')[:-1]}:"
+item_s = f"/{key.replace(' ', '/').replace('.', '/')}/"
 firstname = "custom"
 
 # get the current list of custom shortcuts
 get = lambda cmd: subprocess.check_output(["/bin/bash", "-c", cmd]).decode("utf-8")
+print(key)
 current = eval(get(f"gsettings get {key}"))
 
 # make sure the additional keybinding mention is no duplicate
