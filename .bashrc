@@ -10,6 +10,7 @@ alias 'ipython'='ipython3'
 alias 'python'='python3'
 alias spipup="spip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo -H pip install --upgrade"
 alias jn="jupyter-notebook"
+alias jlab="jupter-lab"
 
 # general
 alias gputop="watch -n 0.5 nvidia-smi"
