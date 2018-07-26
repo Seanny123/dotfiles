@@ -8,8 +8,8 @@ sudo apt install software-properties-common python-software-properties
 
 ## System utilites
 # Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+wget -O google-signing-key.pub https://dl.google.com/linux/linux_signing_key.pub
+sudo apt-key add google-signing-key.pub
 # Wine setup
 wget -nc https://dl.winehq.org/wine-builds/Release.key
 sudo apt-key add Release.key
@@ -29,7 +29,7 @@ sudo add-apt-repository --yes "deb http://archive.canonical.com/ubuntu $(lsb_rel
 sudo apt update
 
 sudo apt install --install-recommends winehq-staging
-sudo apt -y trash-cli xclip git filezilla gedit unrar vlc pdfgrep htop shutter keepass2 curl wine
+sudo apt -y trash-cli xclip git filezilla gedit unrar vlc pdfgrep htop shutter keepass2 curl wine google-chrome-stable
 sudo apt -y nautilus-dropbox
 sudo apt -y sublime-text code
 
