@@ -34,7 +34,7 @@ sudo apt -y nautilus-dropbox
 sudo apt -y skype sublime-text code
 
 
-wget https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=English -O Foxit.exe
+wget -O Foxit.exe https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=English 
 
 # Python specific
 sudo apt -y python-dev python-setuptools python-tk python-pip
