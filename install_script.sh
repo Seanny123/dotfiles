@@ -31,7 +31,7 @@ sudo apt update
 sudo apt install --install-recommends winehq-staging
 sudo apt -y trash-cli xclip git filezilla gedit unrar vlc pdfgrep htop shutter keepass2 curl wine
 sudo apt -y nautilus-dropbox
-sudo apt -y skype sublime-text code
+sudo apt -y sublime-text code
 
 
 wget -O Foxit.exe https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=English 
