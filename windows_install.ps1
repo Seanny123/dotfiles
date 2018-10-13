@@ -3,21 +3,20 @@ Set-ExecutionPolicy AllSigned
 iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 
 # Install utilities
-choco install --yes googlechrome firefox git notepadplusplus filezilla vlc sublimetext3 dropbox 7zip gpu-z foxitreader qbittorrent
+cinst -y googlechrome firefox git notepadplusplus filezilla vlc sublimetext3 visualstudiocode dropbox 7zip gpu-z foxitreader qbittorrent slack evernote workflowy
 
 # JS dev installation
-choco install -yes visualstudiocode nodejs yarn
+cinst -y nodejs yarn
 npm install -g tslint typescript
 
 # Python (no MKL optimizations)
-# TODO: also add to path?
 choco install anaconda3 --params="/AddToPath:1" --yes
 choco install pycharm
 
 # Gaming
-choco install --yes steam
+cinst -y steam
 
 # Android
-choco install --yes androidstudio
+cinst -y androidstudio
 
 # TODO: setup blue light filtering
