@@ -8,9 +8,10 @@ alias 'spy'='sudo python3'
 alias 'py'='ipython3'
 alias 'ipython'='ipython3'
 alias 'python'='python3'
-alias spipup="spip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo -H pip install --upgrade"
-alias jn="jupyter-notebook"
-alias jlab="jupter-lab"
+alias julia='/opt/julia-1.0.2/bin/julia'
+alias spipup='spip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo -H pip install --upgrade'
+alias jn='jupyter-notebook'
+alias jlab='jupter-lab'
 
 # general
 alias gputop="watch -n 0.5 nvidia-smi"
@@ -22,9 +23,9 @@ gcv()
 }
 
 # helper functions
-spip()
-{
-    sudo -H pip3 $*
+spip()                            
+{                                 
+    sudo -H python3 -m pip $* 
 }
 
 dpy()
