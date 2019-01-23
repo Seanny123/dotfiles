@@ -3,7 +3,7 @@ Set-ExecutionPolicy AllSigned
 iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 
 # Install utilities
-cinst -y googlechrome firefox git notepadplusplus filezilla vlc sublimetext3 visualstudiocode dropbox 7zip gpu-z foxitreader qbittorrent slack evernote workflowy
+cinst -y googlechrome firefox git notepadplusplus filezilla vlc visualstudiocode dropbox 7zip gpu-z foxitreader qbittorrent slack evernote workflowy
 
 # JS dev installation
 cinst -y nodejs yarn
