@@ -14,9 +14,6 @@ sudo apt-key add google-signing-key.pub
 wget -nc https://dl.winehq.org/wine-builds/Release.key
 sudo apt-key add Release.key
 sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
-# Sublime setup
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 # Visual Studio Code setup
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
@@ -31,7 +28,7 @@ sudo apt update
 sudo apt install --install-recommends winehq-staging
 sudo apt -y trash-cli xclip git filezilla gedit unrar vlc pdfgrep htop shutter keepass2 curl wine google-chrome-stable
 sudo apt -y nautilus-dropbox
-sudo apt -y sublime-text code
+sudo apt -y code
 
 
 wget -O Foxit.exe https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=English 
@@ -52,11 +49,6 @@ git config --global user.name "Sean Aubin"
 git config --global user.email seanaubin@gmail.com
 git-nbdiffdriver config --enable --global
 
-# Waterloo VPN requirements
-sudo apt install --yes network-manager-openconnect lib32z1 lib32ncurses5
-wget https://cn-vpn.uwaterloo.ca/CACHE/stc/3/binaries/vpnsetup.sh
-sudo bash vpnsetup.sh
-
 # Remove the games, messaging and email stuff that I don't use that usually exists on a default Ubuntu install
 sudo apt remove --yes thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-mines gnome-sudoku gnome-books gnome-maps gnome-contacts 
 
@@ -68,13 +60,6 @@ wine Foxit.exe
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo npm install -g typescript tslint
-
-# VS Code
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-sudo apt update
-sudo apt install code
 
 # Gnome tweaks
 gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
