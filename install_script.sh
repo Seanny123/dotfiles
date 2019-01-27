@@ -57,7 +57,7 @@ wine notepad
 wine Foxit.exe
 
 # Configure NodeJS
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo npm install -g typescript tslint
 
