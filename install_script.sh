@@ -11,13 +11,9 @@ sudo apt install software-properties-common python-software-properties
 wget -O google-signing-key.pub https://dl.google.com/linux/linux_signing_key.pub
 sudo apt-key add google-signing-key.pub
 # Wine setup
-wget -nc https://dl.winehq.org/wine-builds/Release.key
-sudo apt-key add Release.key
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
 sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
-# Visual Studio Code setup
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 # Pycharm
 sudo snap install pycharm-professional --classic
 
@@ -26,12 +22,11 @@ sudo add-apt-repository --yes "deb http://archive.canonical.com/ubuntu $(lsb_rel
 sudo apt update
 
 sudo apt install --install-recommends winehq-staging
-sudo apt -y trash-cli xclip git filezilla gedit unrar vlc pdfgrep htop shutter keepass2 curl wine google-chrome-stable
-sudo apt -y nautilus-dropbox
-sudo apt -y code
+sudo apt install -y trash-cli xclip git filezilla gedit unrar vlc pdfgrep htop shutter keepass2 curl google-chrome-stable
+sudo apt install -y nautilus-dropbox
 
 
-wget -O Foxit.exe https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=English 
+wget -O Foxit.exe "https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=English" 
 
 # Python specific
 sudo apt -y python-dev python-setuptools python-tk python-pip
@@ -42,7 +37,7 @@ sudo -H pip3 install jupyter --upgrade
 
 mkdir ~/.jupyter/custom
 wget https://raw.githubusercontent.com/Seanny123/jupyter-dark-theme/master/custom.css -P ~/.jupyter/custom
-wget https://raw.githubusercontent.com/Seanny123/Linux-Settings/custom.js -P ~/.jupyter/custom
+wget https://raw.githubusercontent.com/Seanny123/dotfiles/custom.js -P ~/.jupyter/custom
 
 # Git specific
 git config --global user.name "Sean Aubin"
