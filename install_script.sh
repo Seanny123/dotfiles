@@ -29,8 +29,8 @@ sudo apt install -y nautilus-dropbox
 wget -O Foxit.exe "https://www.foxitsoftware.com/downloads/latest.php?product=Foxit-Reader&platform=Windows&package_type=exe&language=English" 
 
 # Python specific
-sudo apt -y python-dev python-setuptools python-tk python-pip
-sudo apt -y python3-dev python3-setuptools python3-tk python3-pip
+sudo apt install -y python-dev python-setuptools python-tk python-pip
+sudo apt install -y python3-dev python3-setuptools python3-tk python3-pip
 sudo -H pip3 install pip --upgrade
 sudo -H pip3 install ipython ipdb flake8 seaborn pandas tables pytest scipy scikit-learn pylint notebook h5py hyperopt nbdime pyqt5
 sudo -H pip3 install jupyter --upgrade
