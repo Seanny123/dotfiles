@@ -24,7 +24,7 @@ current = eval(get(f"gsettings get {key}"))
 # make sure the additional keybinding mention is no duplicate
 n = 1
 while True:
-    new = f"{item_s+firstname+str(n)}/"
+    new = f"{item_s}{firstname}{n}/"
     if new in current:
         n += 1
     else:
@@ -34,10 +34,10 @@ while True:
 current.append(new)
 
 # create the shortcut, set the name, command and shortcut key
-cmd0 = f"gsettings set {key} '{str(current)}'"
-cmd1 = f"gsettings set {subkey1+new} name '{args.name}'"
-cmd2 = f"gsettings set {subkey1+new} command '{args.command}'"
-cmd3 = f"gsettings set {subkey1+new} binding '{args.binding}'"
+cmd0 = f'gsettings set {key} "{str(current)}"'
+cmd1 = f'gsettings set {subkey1}{new} name "{args.name}"'
+cmd2 = f'gsettings set {subkey1}{new} command "{args.command}"'
+cmd3 = f'gsettings set {subkey1}{new} binding "{args.binding}"'
 
-for cmd in [cmd0, cmd1, cmd2, cmd3]:
+for cmd in (cmd0, cmd1, cmd2, cmd3):
     subprocess.call(["/bin/bash", "-c", cmd])
