@@ -1,7 +1,8 @@
 # shell
-alias ".."="cd .."
+alias '..'='cd ..'
 alias lh='ls -sh'
 alias del='trash-put'
+alias clip='xclip -sel clip'
 
 # python
 alias 'spy'='sudo python3'
