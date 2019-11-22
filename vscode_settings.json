@@ -9,4 +9,10 @@
         "**/*.js": {"when": "$(basename).ts"},
         "**/*.js.map": true
     }
+    "julia.enableTelemetry": true,
+    "files.autoSave": "afterDelay",
+    "julia.enableCrashReporter": true,
+    "editor.wordWrap": "on",
+    "editor.mouseWheelZoom": true,
+    "window.zoomLevel": 1
 }
