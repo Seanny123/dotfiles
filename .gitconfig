@@ -28,6 +28,8 @@
 	whitespace = cr-at-eol
 [branch]
 	autosetuprebase = always
+[pull]
+  	rebase = true
 [diff "jupyternotebook"]
 	command = git-nbdiffdriver diff
 [alias]
@@ -39,4 +41,4 @@
 	sh = show --stat
 	showtrackedignored = ls-files -i --exclude-standard
 	st = status -sb
-	gb = checkout --track -b $1 origin/$1
+	gp = push -u origin HEAD
