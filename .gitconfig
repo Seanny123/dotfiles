@@ -51,3 +51,25 @@
 
 [diff "jupyternotebook"]
 	command = git-nbdiffdriver diff
+
+[alias]
+	wdiff = diff --color-words
+	co = checkout
+	ds = diff --staged
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	ls = ls-files
+	sh = show --stat
+	showtrackedignored = ls-files -i --exclude-standard
+	st = status -sb
+	gb = checkout -b $1
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[cola]
+	spellcheck = false
+	icontheme = dark
+	theme = flat-dark-red

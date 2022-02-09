@@ -1,6 +1,6 @@
 cd /tmp
 
-sudo dpkg --add-architecture i386 
+sudo dpkg --add-architecture i386
 dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
 
 # Debian systems don't have `add-apt-repository` by default
@@ -14,8 +14,6 @@ sudo apt-key add google-signing-key.pub
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
 sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
-# Pycharm
-sudo snap install pycharm-professional --classic
 
 # Partner repos
 sudo add-apt-repository --yes "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner"
@@ -39,22 +37,12 @@ mkdir ~/.jupyter/custom
 wget https://raw.githubusercontent.com/Seanny123/jupyter-dark-theme/master/custom.css -P ~/.jupyter/custom
 wget https://raw.githubusercontent.com/Seanny123/dotfiles/custom.js -P ~/.jupyter/custom
 
-# Git specific
-git config --global user.name "Sean Aubin"
-git config --global user.email seanaubin@gmail.com
-git-nbdiffdriver config --enable --global
-
 # Remove the games, messaging and email stuff that I don't use that usually exists on a default Ubuntu install
 sudo apt remove --yes thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-mines gnome-sudoku gnome-books gnome-maps gnome-contacts 
 
 # Configure wine
 wine notepad
 wine Foxit.exe
-
-# Configure NodeJS
-curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
-sudo apt install -y nodejs
-sudo npm install -g typescript tslint
 
 # Gnome tweaks
 gsettings set org.gnome.shell.overrides workspaces-only-on-primary false

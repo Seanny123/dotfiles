@@ -1,0 +1,6 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "Alt-s": "Save,Quit",
+    "Ctrl-d": "SpawnMultiCursor",
+    "CtrlShiftD": "DuplicateLine"
+}
