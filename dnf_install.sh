@@ -4,7 +4,7 @@ sudo dnf install -y trash-cli xclip xkill git filezilla gedit unrar pdfgrep htop
 
 sudo dnf install -y vlc strawberry
 
-sudo dnf install fish bat fzf fd-find
+sudo dnf install -y fish bat fzf fd-find
 
 # Remove the games, messaging and email stuff that I don't use that usually exists on a default Fedora Gnome install
 sudo dnf remove -y thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-mines gnome-sudoku gnome-books gnome-maps gnome-contacts
