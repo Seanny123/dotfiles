@@ -1,4 +1,4 @@
-dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
+dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']"
 
 sudo dnf install -y trash-cli xclip git filezilla gedit unrar pdfgrep htop shutter keepass2 curl git-cola meld ripgrep
 

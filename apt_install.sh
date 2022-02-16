@@ -1,7 +1,7 @@
 cd /tmp
 
 sudo dpkg --add-architecture i386
-dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
+dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']"
 
 # Debian systems don't have `add-apt-repository` by default
 sudo apt install software-properties-common python-software-properties
