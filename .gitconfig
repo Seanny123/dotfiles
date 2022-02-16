@@ -1,6 +1,6 @@
 [user]
 	name = Sean Aubin
-	email = saubin@uwaterloo.ca
+	email = <insert-email>
 
 [alias]
 	wdiff = diff --color-words
