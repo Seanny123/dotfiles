@@ -1,0 +1,3 @@
+* https://www.google.ca/search?q=
+ev https://www.evernote.com/client/web#?an=true
+rr https://roamresearch.com/#/app/Seanny123
