@@ -1,0 +1,19 @@
+! 2/17/2020 https://hackernoon.com
+hackernoon.com##.ads > .sponsor
+
+! twitter.com
+twitter.com##[aria-label="Timeline: Trending now" i]
+twitter.com##[aria-label="Who to follow" i]
+
+! 2020-11-15 https://tabs.ultimate-guitar.com
+tabs.ultimate-guitar.com##.js-fp-video
+
+! 2021-03-26 https://www.nature.com
+www.nature.com###onetrust-banner-sdk > .ot-sdk-container
+
+
+! 2021-06-09 https://pypi.org
+pypi.org##.notification-bar--fundraiser.notification-bar
+
+! 2021-10-14 https://bmcbioinformatics.biomedcentral.com
+bmcbioinformatics.biomedcentral.com##.vertical-align-content.bottom.otFlat
