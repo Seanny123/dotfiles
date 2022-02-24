@@ -12,6 +12,14 @@ sudo dnf remove -y thunderbird aisleriot gnome-calendar gnome-mahjongg gnome-min
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 fisher install PatrickF1/fzf.fish
 
+# fix vscode terminal fonts with powerline
+cd /tmp
+git clone git@github.com:abertsch/Menlo-for-Powerline.git
+cd Menlo-for-Powerline/
+mkdir ~/.fonts
+cp *.ttf ~/.fonts/
+fc-cache -vf ~/.fonts
+
 # Gnome tweaks
 gsettings set org.gnome.shell.overrides workspaces-only-on-primary false
 gsettings set org.gnome.desktop.wm.preferences focus-mode sloppy
