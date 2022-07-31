@@ -49,6 +49,9 @@
 [pull]
   	rebase = true
 
+[push]
+	autoSetupRemote = true
+
 [diff "jupyternotebook"]
 	command = git-nbdiffdriver diff
 
