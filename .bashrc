@@ -13,8 +13,7 @@ alias kccc="kubectl config current-context"
 alias kcn="kubectl config set-context (kubectl config current-context) --namespace"
 
 # python
-alias 'spy'='sudo python3'
-alias 'py'='python3'
+alias py='python3'
 alias jn='jupyter-notebook'
 alias jlab='jupter-lab'
 
